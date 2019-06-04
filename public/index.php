@@ -65,6 +65,11 @@ $kernel->terminate($request, $response);
     NÃO PRECISAR FICAR DANDO REQUIRE EM TODAS AS PAGINA 
 */
 
+/*
+    INICIAR O SERVIDOR
+    php artisan serve
+*/
+
 /* 
     MODIFICAR TODOS OS NAMESPACES 
     php artisan app:name ieleny
