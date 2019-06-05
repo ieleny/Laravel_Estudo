@@ -121,3 +121,55 @@ $kernel->terminate($request, $response);
     php artisan make:model Produto -m
 
 */
+
+/* 
+    CRIAR CONTROLLER 
+
+    php artisan make:controller Produto -m
+*/
+
+/* 
+
+    MIGRATIONS 
+
+    Responsavel por gerenciar cada mudança estrutural
+    de nosso banco de dados, ou seja, para cada tabela, coluna, índice, criados em nosso banco de dados,
+    podemos ter uma migration para realizar essa operação de forma automática
+
+    QUANDO REALIZAR A ALTERAÇÃO FAZER A SEGUINTE ALTERAÇÃO
+
+    php artisan migrate
+
+    CRIAR UMA TABELA EM NOSSO BANCO DE DADOS PARA PODER GERENCIAR NOSSOAS MIGRATIONS
+
+    migrate:install
+
+    EXECUTA TODAS AS MIGRATIONS DISPONIVEIS NA APLICAÇÃO
+
+    migrate
+
+    ATUALIZAR O MIGRATE
+    
+    php artisan migrate:refresh
+
+
+*/
+
+
+/* 
+    ACESSAR O TINKER 
+
+    CONSOLE INTERATIVO
+
+    php artisan tinker
+
+    -- PASSAR O USE DOS NAMESPACES DE ACORDO COM A CLASSE
+    use app\Http\Controllers
+
+*/
+
+/* 
+
+    
+
+*/
