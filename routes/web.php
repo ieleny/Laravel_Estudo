@@ -11,11 +11,23 @@
 |
 */
 
+use app\Http\Controllers\LoginController;
+
 Route::get('/', function () {
     return view('welcome');
 });
 
+/* CHAMAR O CONTROLLER DO LOGIN */
 Route::get('Login', function () {
-    //CHAMAR O CONTROLLER 
+    $LoginController = new LoginController();
+    //$LoginController->index();
+});
+
+Route::get('blade', function () {
+    return view('loginView');
+});
+
+Route::get('create', function () {
+    return view('create');
 });
 

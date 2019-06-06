@@ -9,13 +9,11 @@ class LoginController extends Controller
 {
 
     /* RETORNA TODOS OS DADOS*/
-    public function index()
+    public function __construct()
     {
-        $login = Login::all();
-        return view('Login',['Login'=>$login]);
-
-        //return "Olá Mundo";
-
+        $login = LoginModel::all();
+        echo view('loginView',['Login'=>$login])->render();
     }
+
 
 }
