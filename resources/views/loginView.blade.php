@@ -8,7 +8,7 @@
             
             <h1>USUÁRIOS</h1>
 
-            <button href="{{ url('create') }}" class="btn btn-info pull-right">Adicionar Novo Usuário</button>
+            <a href="{{ url('create') }}" class="btn btn-info pull-right">Adicionar Novo Usuário</a>
             <table class="table table-striped table-bordered table-hover">
 
                 <thead>
@@ -25,8 +25,8 @@
                             <td>{{ $Login->id }}</td>
                             <td>{{ $Login->nome }}</td>
                             <td>
-                                <button>Editar</button>
-                                <button>Excluir</button>
+                                <a href="{{ route('Login.edit',['id'=>$Login->id]) }}" class="btn btn-success">Editar</a>
+                                <a href="{{ route('Login.delete',['id'=>$Login->id]) }}" class="btn btn-info">Excluir</a>
                             </td>
                         </tr>
                     @endforeach
